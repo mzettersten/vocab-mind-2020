@@ -1,0 +1,138 @@
+
+body {
+ position: absolute;
+ top:20px:
+ left:20px;
+ width:1280px;
+ height:800px;
+ font-family: Arial;
+ background-color: #9C9C9B;
+ /*box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+ border: 5px double #333;*/
+}
+
+#jspsych-target {
+ color: #424242;
+ /*background-color:#F2F2F2;*/
+ background-color:#FFFFFF;
+ padding-top:4px;
+ padding-left:5px;
+ margin-top:85;
+ center: auto;
+ width:650px;
+ height:95px;
+ border: 1px double #424242;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ -moz-box-shadow: 0 0 .2em rgba(0, 0, 0, .8);
+ -webkit-box-shadow: 0 0 .2em rgba(0, 0, 0, .8);
+}
+
+#prompt {
+ margin-top: 85;
+ width:650px;
+ z-index:10;
+ center: auto;
+}
+
+#LoadSign{
+ position:absolute;
+ center: auto;
+ left:565px;
+ top:275px;
+}
+
+#Bongard{
+ position:absolute;
+ center: auto;
+ left:435px;
+ top:175px;
+}
+
+#Bongard2{
+ position:absolute;
+ center: auto;
+ left:435px;
+ top:87px;
+}
+
+#Bongard3{
+ position:absolute;
+ center: auto;
+ left:390px;
+ top:145px;
+}
+
+#Tjspsych-survey-text-0 {
+ position:absolute;
+ left:500px;
+ top:160px;
+ 
+}
+#Tjspsych-survey-text-1 {
+ position:absolute;
+ left:500px;
+ top:260px;
+}
+
+#Tjspsych-survey-text-next {
+ position:absolute;
+ left:570px;
+ top:370px;
+}
+
+ /*
+  *
+  * PLUGIN: jspsych-survey-text-likert
+  *
+ */
+
+.jspsych-survey-text-likert-slider {
+	margin:0 auto;
+	width: 500px;
+}
+
+.jspsych-survey-text-likert-question {
+	margin:0 auto;
+	text-align:center;
+}
+
+.jspsych-survey-text-likert-sliderlabels {
+	margin:10 auto;
+}
+
+.jspsych-survey-text-likert {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+} 
+
+.jspsych-survey-likert-slider {
+	margin:0 auto;
+	width: 500px;
+}
+
+.jspsych-survey-likert-question {
+	margin:0 auto;
+	text-align:center;
+}
+
+.jspsych-survey-likert-sliderlabels {
+	margin:10 auto;
+}
+
+.jspsych-survey-likert {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+} 
+
+
+
+
+
+
+

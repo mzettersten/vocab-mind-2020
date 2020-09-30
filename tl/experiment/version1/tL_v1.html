@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="lib/js/jquery.min.js"></script>
+  <script src="lib/js/jquery-ui.min.js"></script>
+  <script src="lib/jspsych.js"></script>
+  <script src="lib/plugins/jspsych-text.js"></script>
+  <script src="lib/plugins/jspsych-survey-likert-new.js"></script>
+  <script src="lib/plugins/jspsych-survey-text-likert-new.js"></script>
+  <script src="lib/plugins/jspsych-instructions.js"></script>
+  <script src="lib/plugins/jspsych-survey-text-new.js"></script>
+  <script src="lib/plugins/test-sort.js"></script>
+  
+  <link rel="stylesheet" href="lib/css/jquery-ui.css"></link>
+  <link rel="stylesheet" href="lib/css/jspsych.css"></link>
+  <link rel="stylesheet" type="text/css" href="lib/css/General.css"></link>
+  <link rel="stylesheet" type="text/css" href="lib/css/Testing.css"></link>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+ </head>
+ <body>
+  <div id="jspsych-target"></div>
+  
+ </body>
+ <script>
+  
+  function createRandomWord(length) {
+   var consonants = 'bcdfghjklmnpqrstvwxyz',
+   vowels = 'aeiou',
+   rand = function(limit) {
+    return Math.floor(Math.random()*limit);
+   },
+   i, word='', length = parseInt(length,10),
+   consonants = consonants.split(''),
+   vowels = vowels.split('');
+   for (i=0;i<length/2;i++) {
+    var randConsonant = consonants[rand(consonants.length)],
+    randVowel = vowels[rand(vowels.length)];
+    word += (i===0) ? randConsonant.toUpperCase() : randConsonant;
+    word += i*2<length-1 ? randVowel : '';
+   }
+   return word;}
+   
+ var sortingTypes = [];
+ var exampleTypes = [];
+
+ sortingTypes.push("A");
+ sortingTypes.push("B");
+ 
+ exampleTypes.push("A");
+ exampleTypes.push("B");
+ 
+ //alert(sortingTypes[0]);
+
+ 
+  // generate a random subject ID
+  var subject_id = Math.floor(Math.random()*1000000);
+  subject_id="p"+subject_id.toString();
+
+  
+  //set number of blocks for learning and test phases
+  var learnBlockNum=2;
+  //var testBlockNum=1;
+  
+  var shuffleNum = 10;
+
+  
+  //save workerID if it is part of the survey URL ?workerId=
+  function getParamFromURL( name )
+  {
+   name = name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+                         var regexS = "[\?&]"+name+"=([^&#]*)";
+                         var regex = new RegExp( regexS );
+                         var results = regex.exec( window.location.href );
+                         if( results == null )
+                         return "";
+                         else
+                         return results[1];
+                         }
+                         
+                         var workerId = getParamFromURL( 'workerId' );
+                         if (workerId==="") {
+                         workerId=subject_id;
+                         }
+					     
+					     //set nameability condition from URL (high or low)
+					     var condition_assignment=getParamFromURL( 'cond' );
+                         if (condition_assignment==="") {
+                         condition_assignment="high";
+					 }
+  
+					     //set category location assignment from URL: is A left or right?
+					     var categoryALoc_assignment_temp=getParamFromURL( 'loc' );
+						 if (categoryALoc_assignment_temp=="r") {
+							 var categoryALoc_assignment="right";
+						 } else if (categoryALoc_assignment_temp=="l") {
+							 var categoryALoc_assignment="left";
+						 } else {
+							 var categoryALoc_assignment="left";
+						 }
+
+                         // record the condition assignment in the jsPsych data
+                         // this adds a property called 'subject' and a property called 'condition' to every trial
+                         jsPsych.data.addProperties({
+                                                    subject: subject_id,
+                                                    condition: condition_assignment,
+							 						categoryALoc: categoryALoc_assignment,
+                                                    workerId: workerId
+                                                    });
+                         
+                         var experiment = [];
+                         
+                         //CREATE STIMULI
+						 
+						 var items1 = [
+							'tl_0_30',
+							'tl_0_60',
+							'tl_0_90',
+							'tl_0_120',
+							'tl_0_150',
+							'tl_10_60',
+							'tl_10_90',
+							'tl_10_120',
+							'tl_10_150',
+							'tl_20_90',
+							'tl_20_120',
+							'tl_20_150',
+							'tl_30_120',
+							'tl_30_150',
+							'tl_40_150'];
+							
+   						 var items2 = [
+   							'tl_50_120',
+   							'tl_50_90',
+   							'tl_50_60',
+   							'tl_50_30',
+   							'tl_50_0',
+   							'tl_40_90',
+   							'tl_40_60',
+   							'tl_40_30',
+   							'tl_40_0',
+   							'tl_30_60',
+   							'tl_30_30',
+   							'tl_30_0',
+   							'tl_20_30',
+   							'tl_20_0',
+   							'tl_10_0'];
+						 
+						
+						var itemStims=[];
+						stimsPreload = [];
+						for (var i = 0; i < items1.length; i++) {
+							stimsPreload.push("lib/images/"+items1[i]+".jpg");
+							stimsPreload.push("lib/images/"+items1[i]+"_rotated.jpg");
+							stimsPreload.push("lib/images/"+items2[i]+".jpg");
+							stimsPreload.push("lib/images/"+items2[i]+"_rotated.jpg");
+						};
+						 
+                         // declare an array to hold the stimuli
+                         var learnArray=[];
+						 
+						 //LEARNING TRIALS
+						 //add category L
+                         for (var i = 0; i < items1.length; i++) {
+							 if (condition_assignment=="high") {
+								stim = "lib/images/"+items1[i]+".jpg";
+								label = items1[i]+".jpg";
+								catLabel = "L";
+							 } else {
+							 	stim = "lib/images/"+items1[i]+"_rotated.jpg";
+								label = items1[i]+"_rotated.jpg";
+								catLabel = "L_rotated";
+							 }
+							
+							if (categoryALoc_assignment=="left") {
+								locationTemp="left";
+							} else {
+								locationTemp="right";
+							};
+							
+							learnArray.push([stim,label,catLabel,locationTemp]);
+						};
+						 
+						 	 
+						 //add category T
+                         for (var i = 0; i < items2.length; i++) {
+							 if (condition_assignment=="high") {
+								stim = "lib/images/"+items2[i]+".jpg";
+								label = items2[i]+".jpg";
+								catLabel = "T";
+							 } else {
+							 	stim = "lib/images/"+items2[i]+"_rotated.jpg";
+								label = items2[i]+"_rotated.jpg";
+								catLabel = "T_rotated";
+							 }
+							
+							if (categoryALoc_assignment=="left") {
+								locationTemp="right";
+							} else {
+								locationTemp="left";
+							};
+							
+							learnArray.push([stim,label,catLabel,locationTemp]);
+						 };
+ 
+                         
+                         //add initial text and instructions
+                         var initial_instructions = {
+                         type: 'instructions',
+                         size: 670,
+                         pages: [
+                                 "<br>"+ "<br>"
+                                 +'<center><b style="font-size:20px">Welcome to the sorting game.</b></center>'
+                                 + "<br>"
+                                 +'In this HIT, we will ask you to sort groups of images into two categories: category A and category B. You will learn which images go with each category as you go. Later we will test how well you learned the categories. '
+                                 +"<br>" +"<br>" +
+							 "Make your decision by dragging the image that appears in the center of the screen to the left box (category A) or the right box (category B). You will begin just by guessing, and will receive messages letting you know if you responded correctly or not. This will help you learn which images should be classified as category A and which as category B. If you make a mistake, the webpage will pause for a few seconds to give you more time to look at the image you got wrong - don't worry, the experiment hasn't frozen. Try to answer as quickly and accurately as you can. "+"<b>Being 100% accurate is very difficult, though, so  don't worry if you make occasional errors.</b>"+"<br>" +"<br>" + "You will sort a total of 60 images. We will let you know when you reach the halfway point."+ "<br>"
+                                 +'<center>Click next to begin.</center>'
+                                 ],
+                         show_clickable_nav: true,
+								 timing_post_trial: 0
+                         }
+                         
+                         //add initial text and instructions trial to experiment
+                         experiment.push(initial_instructions);
+						 
+                         //create a new learning trial
+						 for (var i = 1; i <= learnBlockNum; i++) {
+							 //create sequence for creating random orders
+							 var randomSequence=[];
+							 for (var k = 0; k < learnArray.length; k++) {
+							    randomSequence.push(k);
+							 }
+							 for (j = 0; j < shuffleNum; j++) {
+								 var randomSequence=jsPsych.randomization.shuffle(randomSequence);
+							 }
+							 var curStimsLearn=[];
+							 var curStimsLearnNames = [];
+							 var curCategoryNameLearn = [];
+							 var curCategoryLocLearn=[];
+							 for (index in randomSequence) {
+								 curStimsLearn.push(learnArray[randomSequence[index]][0])
+								 curStimsLearnNames.push(learnArray[randomSequence[index]][1])
+								 curCategoryNameLearn.push(learnArray[randomSequence[index]][2])
+								 curCategoryLocLearn.push(learnArray[randomSequence[index]][3])
+							 };
+	                         
+							 
+                         var trials_learn = {
+                         type: 'test-sort',
+                         sortTypes: [sortingTypes],
+                         stimuli: [curStimsLearn],
+                         category: [curCategoryNameLearn],
+						categoryLoc: [curCategoryLocLearn],
+						feedback: true,
+						stack: false,
+						repeatIncorrect: true,
+                         stimNames: [curStimsLearnNames],
+                         data: {trial_type: "learn",blockNum: i},
+                         prompt:"<center>Drag and drop the image into the category A or category B box to respond.</center>",
+							 timing_post_trial: 0
+							 
+                         };
+                         
+                         // add the test block to the experiment description
+                        experiment.push(trials_learn);
+						
+                        var block_instructions = {
+                        type: 'instructions',
+                        size: 350,
+                        pages: [
+                                "<br>"+ "<br>"
+                                +'<center><b style="font-size:20px">Great job!</b></center>'
+                                + "<br>"
+                                +'You have finished half of the trials. Only 30 more images to go! Continue to learn which images belong in category A and which belong in category B by sorting the images as quickly and accurately as you can.'+ "<br>"+ "<br>"
+                                +'<center>Click next to continue.</center>'
+                                ],
+                        show_clickable_nav: true,
+							 timing_post_trial: 0
+                        }
+						
+						if (i == learnBlockNum/2) {
+							experiment.push(block_instructions);
+						}
+						 
+					 }
+					 
+                     //Add a survey
+                     var intro = ["<center>Almost done! The next pages will ask you a few questions.</center>"];
+                     var page_1_questions = ["How did you decide whether to sort images into category A or category B? Did you have a particular strategy? Please try to be more specific than simply saying 'I used the feedback' or 'I paid attention to the shapes'. For example, describe the rule you used to make your decision.", "What kinds of shapes belonged in category A and in category B?"];
+                     var survey_block = {
+						 preamble: intro,
+						 size: 500,
+						 type: 'survey-text',
+						 questions: [page_1_questions],
+						 rows: [[6,4]],
+						 columns: [[80,80]]
+					 };
+                     
+                     experiment.push(survey_block);
+					 
+                         //create random code for final message
+                         //start code creation script
+                         function randLetter() {
+                         var a_z = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                         var int =  Math.floor((Math.random() * a_z.length));
+                         var rand_letter = a_z[int];
+                         return rand_letter;
+                         };
+                         
+                         var secretCode = "TEEELL"
+                         var code="";
+                         
+                         for (var i = 0; i < 7; i++){
+                         code = code.concat(randLetter());
+                         }
+                         code = code.concat(secretCode);
+                         
+                         for (var i = 0; i < 10; i++){
+                         code = code.concat(randLetter());
+                         }
+                         //end code creation script
+                         
+                         
+                         //debrief and code message
+                         var experimentFinal = [];
+                         var final_instructions = {
+                         type: 'instructions',
+                         size: 425,
+                         pages: [
+                                 'Thanks for participating! This HIT is an experiment in which you were asked to learn two categories based on shapes that varied along two dimensions: where each line in the shape is located horizontally and vertically. People can learn the categories either by attending to the two dimensions, or by associating the categories with familiar shapes (e.g., with the letters T or L, or with rotations of the letters T and L). By participating in this study, you are helping us in ongoing work on how people are able to creatively solve problems and learn new rules. If you have any questions, please feel free to send us a message (lupyanlab@gmail.com)!'
+                                 +"<br>" + "<br>"
+                                 +'<center>Your completion code for <u>mTurk</u> is</center>'
+                                 +"<br>"
+                                 +'<center><u><b style="font-size:20px">'+ code +'</b></u></center>'
+                                 +"<br>"
+                                 +'<center>Please copy/paste this code into the mTurk box.</center>'
+                                 ],
+                         show_clickable_nav: false
+                         }
+                         
+                         //add instructions trial to experiment
+                         experimentFinal.push(final_instructions);
+                         
+                         
+                         
+                         //Added: function for Javascript-PHP communication
+                         function saveData(filename, filedata){
+                         $.ajax({
+                                type:'post',
+                                cache: false,
+                                url: 'save_data.php', // this is the path to the above PHP script
+                                data: {filename: filename, filedata: filedata}
+                                });
+                         };
+                         
+                         //preload stimuli
+                         var instructionImages = [];
+                         instructionImages.push("lib/images/ajax-loader-2.gif");
+						 var allImages = instructionImages.concat(stimsPreload);
+                         
+                         jsPsych.preloadImages(allImages, function(){ startExperiment(); });
+                         
+                         //function to initialize the experiment; will be called once all images are preloaded
+                         function startExperiment(){
+                         jsPsych.init({
+                                      display_element: $('#jspsych-target'),
+                                      experiment_structure: experiment,
+							 		show_progress_bar: true,
+                                      on_finish: function(data) {
+                                      //jsPsych.data.displayData("csv");
+                                      //jsPsych.data.localSave("tL_v1_"+subject_id+".csv", "csv");
+                                      saveData("tL_v1_"+subject_id+".csv", jsPsych.data.dataAsCSV());
+                                      jsPsych.init({
+                                                   display_element: $('#jspsych-target'),
+                                                   experiment_structure: experimentFinal});
+                                      
+                                      }
+                                      });
+                         };
+                         
+                         
+                         </script>
+</html>
+
+
+
+
+
+
