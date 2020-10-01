@@ -1,0 +1,203 @@
+subject	condition	isRight	leftIsRight	rightIsRight	isPartRight	leftIsPartRight	rightIsPartRight	isNormRight	isNormLeftRight	isNormRightRight	problem	leftResp	rightResp	exampleSortMoves	sortMoves	sortTime	sortAcc	testAcc	testTime	aveUniqueCWordNBPercentCor	aveCWordLengthNBCor	origAcc
+p104932	active	1	1	1	1	1	1	1	1	1	pbp16	the square was proceeded by a circle	the circle was proceeded by a square	12	14	45904	0.857142857	1	28706	0.355523072	3.214285714	0.47826087
+p109296	active	0	0	0	0	0	0	0	0	0	pbp11b	seemed more stable and orderly	seemed more chaotic	13	18	40731	0.666666667	0.75	19695	0.327441706	2.820512821	0.380952381
+p111472	passive	1	1	1	1	1	1	1	1	1	pbp28	These will roll.	These will not roll.	12	15	59469	0.8	1	22355	0.55625	3.75	0.52173913
+p116140	passive	1	1	1	1	1	1	1	0	1	pbp19	Object will fall	Object will stay on ground	14	19	63519	0.631578947	0.875	38232	0.490123457	3.480769231	0.15
+p118034	active	1	1	1	1	1	1	1	1	1	pbp11b	The objects were either touching each other or very close to each other	The objects were relatively far away from each other	13	14	108702	0.857142857	0.875	52050	0.327441706	2.820512821	0.380952381
+p118896	passive	1	1	1	1	1	1	1	1	1	pbp04	All shapes are squares	All shapes are circles	13	14	39199	0.857142857	0.875	32589	0.34939759	2.075	0.625
+p12271	active	0	0	0	0	0	0	0	0	0	pbp13	they are all stacked on one thing at the bottom	there are 2 things holding up the structure	12	14	47631	0.857142857	1	29245	0.508420209	3.46	0.115384615
+p131293	active	1	1	1	1	1	1	1	1	1	pbp04	all were squares	all were circles	18	15	44298	0.8	0.875	33562	0.34939759	2.075	0.625
+p152687	active	0	0	1	1	1	1	0	0	0	pbp24	Even	Off center	16	18	147241	0.666666667	0.25	75389	0.307647059	4.455882353	0.173913043
+p158982	passive	0	0	0	0	0	0	0	0	0	pbp24	I saw some of the shapes were stacked	I saw more floating shapes	14	14	33805	0.857142857	0.75	24830	0.307647059	4.455882353	0.173913043
+p163824	passive	1	1	1	1	1	1	1	1	1	pbp02	One object	Two objects	13	17	58818	0.705882353	1	27053	0.322265492	2.630434783	0.875
+p170689	active	1	1	1	1	1	1	1	1	1	pbp02	there is only one object in the box	there are two objects in the box	14	12	50898	1	1	19720	0.322265492	2.630434783	0.875
+p172456	passive	0	0	0	0	0	0	0	0	0	pbp09	fall left	fall right	19	16	38300	0.75	0.25	23586	0.285384331	4.25	0.285714286
+p17296	active	1	1	1	1	1	1	1	1	1	pbp02	One object	Two objects	12	13	34231	0.923076923	1	29493	0.322265492	2.630434783	0.875
+p180758	active	1	1	1	1	1	1	1	1	1	pbp16	The ball stays to the left	The ball stays to the right	15	16	126785	0.75	1	58647	0.355523072	3.214285714	0.47826087
+p182002	active	1	1	1	1	1	1	1	1	1	pbp02	one object per frame	two objects per frame	12	14	39705	0.857142857	1	26275	0.322265492	2.630434783	0.875
+p182274	passive	1	1	1	1	1	1	1	1	1	pbp04	The images are of square or rectangles	The images are of circles	12	14	57341	0.857142857	1	34067	0.34939759	2.075	0.625
+p187072	passive	1	1	1	1	1	1	1	1	1	pbp16	Circle is left of the square	circle is right of the square	13	13	49521	0.923076923	1	35883	0.355523072	3.214285714	0.47826087
+p188339	active	0	0	0	0	0	0	0	0	0	pbp02	orientation	position on the square	21	18	30998	0.666666667	0.5	29816	0.322265492	2.630434783	0.875
+p189155	passive	0	0	0	0	0	0	0	0	0	pbp13	single base piece to support the blocks	a base of 2 parts to support the blocks	14	14	68571	0.857142857	1	36272	0.508420209	3.46	0.115384615
+p190392	active	1	1	1	1	1	1	1	1	1	pbp02	One object in the image	Two objects in the image	13	13	35025	0.923076923	1	34695	0.322265492	2.630434783	0.875
+p190728	active	1	1	1	1	1	1	1	1	1	pbp16	Circle is on the left	Square is on the left	15	13	52218	0.923076923	1	32257	0.355523072	3.214285714	0.47826087
+p194422	passive	1	1	1	1	1	1	1	1	1	pbp11b	Closer together	Further apart	16	14	100868	0.857142857	1	58810	0.327441706	2.820512821	0.380952381
+p195444	passive	0	0	0	1	1	1	0	0	0	pbp26	Leaning towards the right side	Leaning towards the left side	18	16	81570	0.75	0.5	36056	0.298013041	2.965116279	0.35
+p197279	passive	0	0	0	0	0	0	0	0	0	pbp28	all wheel shaped even if some had spiky ends.	if the point is to the right then it falls right if its a sharp point and the benches are the same except one has wheels so definitely on the same side	14	17	63270	0.705882353	0.625	54944	0.55625	3.75	0.52173913
+p203112	active	0	0	0	0	0	0	0	0	0	pbp19	Will have a sharp drop	Will not have a sharp drop	18	16	78750	0.75	0.625	87960	0.490123457	3.480769231	0.15
+p208070	passive	1	1	1	1	1	1	1	1	1	pbp16	circle is on the left side	square is on the left side	14	13	46855	0.923076923	1	25476	0.355523072	3.214285714	0.47826087
+p210593	active	0	0	0	0	0	0	0	0	0	pbp28	bigger	smaller	16	15	69159	0.8	0.75	38526	0.55625	3.75	0.52173913
+p211566	passive	1	1	1	1	1	1	1	1	1	pbp28	Moves	Doestnt move	19	15	38716	0.8	0.5	26365	0.55625	3.75	0.52173913
+p212900	passive	1	1	1	1	1	1	1	1	1	pbp16	A square follows a circle always	A circle follows a square always	12	13	98522	0.923076923	1	46801	0.355523072	3.214285714	0.47826087
+p219771	passive	1	1	1	1	1	1	1	1	1	pbp16	The circle is always to the left of the square.	The square is always to the left f the circle.	12	13	42279	0.923076923	1	24972	0.355523072	3.214285714	0.47826087
+p228106	active	0	0	0	0	0	0	0	0	0	pbp26	more rectangles	more triangles 	25	21	40867	0.571428571	0.75	30117	0.298013041	2.965116279	0.35
+p230218	active	1	1	1	1	1	1	0	0	0	pbp13	"Solid block, no gaps between blocks"	Space in between blocks	13	14	43744	0.857142857	0.75	22878	0.508420209	3.46	0.115384615
+p248960	passive	0	0	0	0	0	0	0	0	0	pbp24			13	19	89998	0.631578947	0.5	46876	0.307647059	4.455882353	0.173913043
+p255936	active	1	1	1	1	1	1	1	1	1	pbp26	ball is going to roll to the right	ball is going to roll to the left	13	12	61131	1	1	46761	0.298013041	2.965116279	0.35
+p257719	active	1	1	1	1	1	1	1	1	1	pbp04	All square/rectangular/angled shapes	All circular shapes	15	16	71775	0.75	1	30923	0.34939759	2.075	0.625
+p257975	active	1	1	0	1	1	0	0	0	0	pbp19	falling	stopped	19	19	41604	0.631578947	0.375	34476	0.490123457	3.480769231	0.15
+p263012	passive	0	0	0	0	0	0	0	0	0	pbp19	they will clearly go that way	more apt to go that way	13	16	42237	0.75	0.875	30356	0.490123457	3.480769231	0.15
+p26728	active	0	0	0	0	0	0	0	0	0	pbp13	balanced center of gravity on foundation	imbalanced center of gravity on foundation	12	15	103089	0.8	0.625	33982	0.508420209	3.46	0.115384615
+p27967	active	0	0	0	0	0	0	0	0	0	pbp19	i dont know	i have no idea	16	18	74857	0.666666667	0.375	52715	0.490123457	3.480769231	0.15
+p285705	passive	0	0	0	0	0	0	0	0	0	pbp24	the size	the size	17	16	27685	0.75	0.625	26370	0.307647059	4.455882353	0.173913043
+p286272	active	0	0	0	0	0	0	0	0	0	pbp28	the way the lines went	shape of the images	19	18	40152	0.666666667	0.5	31531	0.55625	3.75	0.52173913
+p28686	passive	0	0	0	0	0	0	0	0	0	pbp18	I honestly do not know.	"I tried hard to figure it out, but have no clue!"	13	15	114062	0.8	0.5	68998	0.304831933	3.2375	0.208333333
+p287268	passive	1	1	1	1	1	1	1	1	1	pbp11b	images close to each other	images far apart	14	16	44919	0.75	0.875	34063	0.327441706	2.820512821	0.380952381
+p289846	active	1	1	1	1	1	1	1	1	1	pbp16	ball on left of box	ball on right of box	12	13	39620	0.923076923	1	51545	0.355523072	3.214285714	0.47826087
+p29024	active	1	1	1	1	1	1	0	0	0	pbp09	moving away or towards each other	moving in same direction or not at all	12	18	61602	0.666666667	1	30568	0.285384331	4.25	0.285714286
+p312732	passive	0	0	0	1	1	1	0	0	0	pbp18	Objects moved away from each other	Objects tried to group up	17	19	49361	0.631578947	0.375	63297	0.304831933	3.2375	0.208333333
+p314287	active	1	1	1	1	1	1	1	1	1	pbp02	A single shape	Two shapes	12	15	52066	0.8	1	23258	0.322265492	2.630434783	0.875
+p330565	passive	1	1	1	1	1	1	0	0	0	pbp13	When stacked there is no empty space between shapes	When stacked there is empty space between shapes.	15	13	47395	0.923076923	0.75	21822	0.508420209	3.46	0.115384615
+p33106	passive	1	1	1	1	1	1	0	0	0	pbp13	solid structures	suspended structure	15	19	99617	0.631578947	0.75	56754	0.508420209	3.46	0.115384615
+p336752	passive	1	1	1	1	1	1	1	1	1	pbp11b	The shapes are close together	The shapes are farther apart	14	13	57050	0.923076923	0.875	36571	0.327441706	2.820512821	0.380952381
+p340764	active	0	0	0	0	0	0	0	0	0	pbp24	follow numeric puzzle	Subtract 1	14	19	56686	0.631578947	0.25	81021	0.307647059	4.455882353	0.173913043
+p341288	active	1	1	1	1	1	1	1	1	1	pbp02	There is only one shape in each scene	There are two shapes in each scene	12	14	93638	0.857142857	1	24299	0.322265492	2.630434783	0.875
+p342634	passive	1	1	1	1	1	1	1	1	1	pbp04	squares	circles	15	15	38280	0.8	1	33961	0.34939759	2.075	0.625
+p34646	active	1	1	1	1	1	1	0	0	0	pbp09	Two objects fall different ways	Two objects fall the same way	12	16	109239	0.75	1	48845	0.285384331	4.25	0.285714286
+p353262	passive	0	0	0	0	0	0	0	0	0	pbp26	The circle rises 	The circle falls	14	17	142796	0.705882353	0.625	33394	0.298013041	2.965116279	0.35
+p357739	active	1	1	1	1	1	1	1	1	1	pbp26	the circular object is falling from left to right	the circular object is falling from right to left	13	14	49872	0.857142857	1	56355	0.298013041	2.965116279	0.35
+p365592	passive	0	0	0	0	0	0	0	0	0	pbp18	falling left	falling right	14	19	63924	0.631578947	0.5	35681	0.304831933	3.2375	0.208333333
+p369219	active	1	1	1	1	1	1	1	1	1	pbp28	can easily roll	cannot easily roll	13	16	114540	0.75	0.875	28124	0.55625	3.75	0.52173913
+p376539	passive	1	1	1	1	1	1	1	1	1	pbp18	Objects would stop/stay touching each other.	Objects would stop in a position where they are not all touching.	12	16	73218	0.75	0.875	60546	0.304831933	3.2375	0.208333333
+p387814	passive	0	0	0	0	0	0	0	0	0	pbp02	The images were a reflection of each other.	The shapes got closer together.	17	16	47512	0.75	1	50746	0.322265492	2.630434783	0.875
+p410663	active	1	1	1	1	1	1	1	1	1	pbp26	the ball goes right	the ball goes left	14	16	84335	0.75	0.875	61717	0.298013041	2.965116279	0.35
+p414573	active	0	0	0	0	0	0	0	0	0	pbp24	straight lines- same direction	crooked lines or going in 2 directions	17	18	97171	0.666666667	0.75	41176	0.307647059	4.455882353	0.173913043
+p417639	active	1	1	1	1	1	1	1	1	1	pbp28	will roll	wont roll	12	18	96190	0.666666667	0.875	52892	0.55625	3.75	0.52173913
+p418039	active	0	0	0	1	1	1	0	0	0	pbp24	objects falling straight down	objects falling at an angle	22	19	153027	0.631578947	0.25	96833	0.307647059	4.455882353	0.173913043
+p418705	active	1	1	1	1	1	1	1	1	1	pbp02	one item	two items	12	14	27808	0.857142857	1	20727	0.322265492	2.630434783	0.875
+p4287	active	1	1	1	1	1	1	1	1	1	pbp09	will go in opposite direction	will go in same direction	13	15	48153	0.8	1	38586	0.285384331	4.25	0.285714286
+p428771	passive	1	1	1	1	1	1	0	0	0	pbp13	there were no spaces between blocks	there were spaces between blocks	17	13	74102	0.923076923	0.75	39360	0.508420209	3.46	0.115384615
+p429322	passive	0	0	0	1	1	1	0	0	0	pbp26	the opposite of the side the circle would fall or roll down on	"the circle would fall or roll right so I would categorize to the left, the opposite"	14	13	92694	0.923076923	0.875	57603	0.298013041	2.965116279	0.35
+p436885	active	0	0	0	1	1	1	0	0	0	pbp26	Rightward movement.	Leftward movement.	13	15	121384	0.8	0.625	36676	0.298013041	2.965116279	0.35
+p440979	active	1	1	0	1	1	1	0	0	0	pbp19	falling	not falling	12	13	104184	0.923076923	0.875	38884	0.490123457	3.480769231	0.15
+p449323	passive	1	1	1	1	1	1	0	0	0	pbp11b	Touching or will touch	Not touching	12	15	49701	0.8	1	33427	0.327441706	2.820512821	0.380952381
+p453215	active	0	1	0	1	1	1	0	1	0	pbp28	Objects that roll smoothly	Objects that bounce when they roll	12	20	109596	0.6	0.625	82099	0.55625	3.75	0.52173913
+p454658	passive	0	0	0	0	0	0	0	0	0	pbp24	"to the left, I guess. I looked at the line for some of these "	to the right. Looked at the line to decide	15	16	62824	0.75	0.375	186608	0.307647059	4.455882353	0.173913043
+p458374	passive	1	1	1	1	1	1	1	1	1	pbp09	objects fall / move in different direction	objects fall / move in the same direction	12	15	67865	0.8	1	31406	0.285384331	4.25	0.285714286
+p463859	active	1	1	1	1	1	1	1	1	1	pbp26	The circle would fall to the right.	The circle would fall to the left.	15	13	69602	0.923076923	1	42396	0.298013041	2.965116279	0.35
+p471513	passive	0	0	0	0	0	0	0	0	0	pbp26	mostly left facing	Mostly right	20	13	21243	0.923076923	0.875	17865	0.298013041	2.965116279	0.35
+p478301	active	0	0	0	0	0	0	0	0	0	pbp09	Fall and seperate	Fall and end up together	12	15	54101	0.8	0.5	50083	0.285384331	4.25	0.285714286
+p478708	active	1	1	1	1	1	1	0	0	0	pbp13	solid base	separated base	12	13	54780	0.923076923	1	25763	0.508420209	3.46	0.115384615
+p488570	passive	1	1	1	1	1	1	1	1	1	pbp28	will roll	will not roll	12	14	88000	0.857142857	0.75	52078	0.55625	3.75	0.52173913
+p491375	active	1	1	1	1	1	1	1	1	1	pbp16	circle was on the left side	circle was on the right side	13	13	72744	0.923076923	1	25050	0.355523072	3.214285714	0.47826087
+p49727	passive	1	1	1	1	1	1	1	1	1	pbp02	one object	two objects	13	14	34215	0.857142857	1	24641	0.322265492	2.630434783	0.875
+p502632	passive	1	1	1	1	1	1	1	1	1	pbp04	Contained rectangles	Contained circles	12	12	42004	1	1	21465	0.34939759	2.075	0.625
+p505046	passive	0	0	0	0	0	0	0	0	0	pbp19	Higher velocity	Lower velocity	13	16	147613	0.75	0.75	75944	0.490123457	3.480769231	0.15
+p506544	active	0	0	0	0	0	0	0	0	0	pbp18	A sense of movement towards the middle	Movement to the sides	14	21	93441	0.571428571	0.5	84610	0.304831933	3.2375	0.208333333
+p511173	active	0	0	0	0	0	0	0	0	0	pbp18	I cannot figure this out	I cannot figure this out.	13	16	42063	0.75	0.625	64561	0.304831933	3.2375	0.208333333
+p514243	active	0	0	0	0	0	0	0	0	0	pbp13	flat surface	pivoted on something	15	15	38398	0.8	0.5	21932	0.508420209	3.46	0.115384615
+p519544	active	1	1	1	1	1	1	1	1	1	pbp04	Squares	Circles	15	13	63036	0.923076923	0.875	35807	0.34939759	2.075	0.625
+p525386	passive	1	1	1	1	1	1	1	1	1	pbp28	they will continue to move	will not continue to move	13	19	237157	0.631578947	0.875	35802	0.55625	3.75	0.52173913
+p529170	passive	0	0	0	1	1	1	0	0	0	pbp24	Everything was balanced naturally on straight lines.	Things were off balance.	13	16	44655	0.75	0.625	55180	0.307647059	4.455882353	0.173913043
+p530007	active	0	0	0	0	0	0	0	0	0	pbp19	i dont know	i dont know	12	17	99724	0.705882353	0.625	83979	0.490123457	3.480769231	0.15
+p530291	passive	0	0	0	0	0	0	0	0	0	pbp26	unbalanced	balanced	15	18	52947	0.666666667	0.25	43202	0.298013041	2.965116279	0.35
+p546232	active	1	1	1	1	1	1	1	1	1	pbp04	Squares	Circles	12	13	24843	0.923076923	1	21537	0.34939759	2.075	0.625
+p547217	active	1	1	1	1	1	1	1	1	1	pbp28	Rolls easily	Doesn't roll smoothly	12	14	65858	0.857142857	1	39685	0.55625	3.75	0.52173913
+p556940	active	1	1	1	1	1	1	0	0	0	pbp13	The blocks are touching with no blank space between them.	The blocks have some open blank space between at least some of them. 	12	16	98291	0.75	0.75	57764	0.508420209	3.46	0.115384615
+p560737	active	1	1	1	1	1	1	1	1	1	pbp11b	Something is or will be touching	nothing is or will be touching 	12	16	45940	0.75	0.875	37991	0.327441706	2.820512821	0.380952381
+p572452	passive	0	0	0	0	0	0	0	0	0	pbp13	imgages are stable	images are unstable	13	16	72318	0.75	0.75	64504	0.508420209	3.46	0.115384615
+p5732	passive	0	0	0	0	0	0	0	0	0	pbp28	the cogwheel shape	the different sort of shapes	17	18	56000	0.666666667	0.625	19901	0.55625	3.75	0.52173913
+p575300	active	0	0	0	0	0	0	0	0	0	pbp19	In motion	Not in motion	15	16	83825	0.75	0.625	94289	0.490123457	3.480769231	0.15
+p577681	active	0	0	0	0	0	0	0	0	0	pbp13	the blacks get smaller	they get bigger	19	22	72432	0.545454545	0.375	50508	0.508420209	3.46	0.115384615
+p587160	passive	0	0	0	0	0	0	0	0	0	pbp11b	how they were falling	how they were falling	15	18	45208	0.666666667	0.5	30782	0.327441706	2.820512821	0.380952381
+p59581	active	1	1	1	1	1	1	1	1	1	pbp16	circles is always on the right	circle is always on the left	18	13	47398	0.923076923	1	41349	0.355523072	3.214285714	0.47826087
+p599588	active	0	0	0	0	0	0	0	0	0	pbp24	1	4	16	16	22404	0.75	0.25	15973	0.307647059	4.455882353	0.173913043
+p601496	active	0	0	0	0	0	0	0	0	0	pbp04	objects on the left will not roll	objects on right will roll	13	14	79803	0.857142857	1	50706	0.34939759	2.075	0.625
+p602010	passive	0	0	0	0	0	0	0	0	0	pbp19	Going left or falling straight down	Going right or staying still	12	15	51176	0.8	0.625	36350	0.490123457	3.480769231	0.15
+p605834	passive	1	1	1	1	1	1	1	1	1	pbp11b	objects spaced pretty close together	objects have more distance between them	15	12	87272	1	0.875	47802	0.327441706	2.820512821	0.380952381
+p605870	passive	0	0	0	1	1	1	0	0	0	pbp24	Object above centered over object below.	Object above offset from object below.	12	19	95976	0.631578947	0.75	71519	0.307647059	4.455882353	0.173913043
+p610205	active	1	1	1	1	1	1	1	1	1	pbp26	Circle falling to the right	Circle to the left	15	18	48299	0.666666667	0.25	36094	0.298013041	2.965116279	0.35
+p620961	passive	0	0	0	0	0	0	0	0	0	pbp09	will touch each other	will not touch each other	12	16	65263	0.75	0.5	56898	0.285384331	4.25	0.285714286
+p635377	passive	0	0	0	0	0	0	0	0	0	pbp19	More than one movement	Only one motion	12	15	135758	0.8	0.75	195495	0.490123457	3.480769231	0.15
+p637360	active	1	1	1	1	1	1	0	0	1	pbp11b	combination	separation	16	18	48610	0.666666667	0.5	22016	0.327441706	2.820512821	0.380952381
+p637885	passive	1	1	1	1	1	1	1	1	1	pbp11b	shapes together	shapes apart	19	20	69308	0.6	0.875	40012	0.327441706	2.820512821	0.380952381
+p646106	passive	0	0	0	0	0	0	0	0	0	pbp19	I could visualize the animation	Appears to fit well	24	18	51409	0.666666667	0.625	35457	0.490123457	3.480769231	0.15
+p649677	active	1	1	1	1	1	1	0	1	0	pbp04	 on the left the images were square	on the right the images were round	18	17	52206	0.705882353	1	50724	0.34939759	2.075	0.625
+p64997	active	1	1	1	1	1	1	1	1	1	pbp28	What could roll.	What would remain stationary	12	15	70889	0.8	0.5	52382	0.55625	3.75	0.52173913
+p65768	passive	0	0	0	0	0	0	0	0	0	pbp09	when moved went apart	when moved stayed together	19	19	104124	0.631578947	0.375	97604	0.285384331	4.25	0.285714286
+p65882	passive	1	1	1	1	1	1	1	1	1	pbp16	circle first	square first	12	13	61682	0.923076923	1	27245	0.355523072	3.214285714	0.47826087
+p659101	active	1	1	1	1	1	1	1	1	1	pbp09	these move in opposite directions  when fall	these move in the same direction when they fall	12	15	178372	0.8	1	70863	0.285384331	4.25	0.285714286
+p659460	passive	0	0	0	0	0	0	0	0	0	pbp09	The objects relative positions will change horizontally	Objects relative positions will not change horizontally	13	13	61859	0.923076923	0.75	38640	0.285384331	4.25	0.285714286
+p65960	passive	0	0	0	0	0	0	0	0	0	pbp09	The direction that the thickest part of each piece was facing or the curve of the hill	the direction they were leaning or the curve of the hill or guess	12	18	60119	0.666666667	0.625	64515	0.285384331	4.25	0.285714286
+p662342	passive	0	0	0	0	0	0	0	0	0	pbp09	I try to imagine the figure moving.	I think about the direction of the scene.	19	16	42778	0.75	0.25	21511	0.285384331	4.25	0.285714286
+p662426	active	1	1	1	1	1	1	1	1	1	pbp16	the ball is to the left of the square	the ball is to the right of the square	15	18	43590	0.666666667	0.375	30643	0.355523072	3.214285714	0.47826087
+p665907	active	0	0	0	0	0	0	0	0	0	pbp11b	the way they were falling	the way they were falling	14	17	27103	0.705882353	0.625	20323	0.327441706	2.820512821	0.380952381
+p666704	passive	1	1	1	1	1	1	1	1	1	pbp16	circle is left of square	circle is right of square	12	14	68378	0.857142857	0.875	42805	0.355523072	3.214285714	0.47826087
+p677260	passive	1	1	1	1	1	1	1	1	1	pbp16	Circle is to the left of the square.	Circle is to the right of the square.	12	13	63752	0.923076923	1	29420	0.355523072	3.214285714	0.47826087
+p678784	active	0	0	0	0	0	0	0	0	0	pbp02			22	17	45600	0.705882353	0.25	76057	0.322265492	2.630434783	0.875
+p680792	passive	1	1	1	1	1	1	0	0	0	pbp26	Circle to the right of square	Circle to the left of square	17	15	33892	0.8	0.25	32427	0.298013041	2.965116279	0.35
+p68265	active	1	1	1	1	1	1	1	1	1	pbp26	the circle heading right	the circle heading left	14	16	84294	0.75	0.75	53094	0.298013041	2.965116279	0.35
+p683644	passive	0	0	0	0	0	0	0	0	0	pbp11b	seemed to fall left	seemed to go right	16	17	40578	0.705882353	0.125	31924	0.327441706	2.820512821	0.380952381
+p684834	active	1	1	1	1	1	1	1	1	1	pbp11b	they are all close together	they are all farther apart	17	16	36444	0.75	1	33316	0.327441706	2.820512821	0.380952381
+p687121	passive	1	1	1	1	1	1	1	1	1	pbp02	one object in scene	two objects in scene	14	14	47686	0.857142857	1	28495	0.322265492	2.630434783	0.875
+p688136	active	1	1	1	1	1	1	1	1	1	pbp09	these objects seem to be moving in opposite directions	these objects seem to be moving in the same direction	20	17	254403	0.705882353	0.5	112226	0.285384331	4.25	0.285714286
+p690447	active	0	0	0	0	0	0	0	0	0	pbp18	flat and down	flat and up	13	18	178139	0.666666667	0.375	42654	0.304831933	3.2375	0.208333333
+p693728	active	0	0	0	0	0	0	0	0	0	pbp13	Not sure	guessed	12	17	56243	0.705882353	0	68769	0.508420209	3.46	0.115384615
+p700462	passive	1	1	1	1	1	1	1	1	1	pbp02	there is one object	there are 2 objects	17	15	35301	0.8	1	23403	0.322265492	2.630434783	0.875
+p704917	active	0	0	0	0	0	0	0	0	0	pbp11b	fall in the center	fall to the sides	15	18	48064	0.666666667	0.375	27761	0.327441706	2.820512821	0.380952381
+p709443	passive	0	0	0	0	0	0	0	0	0	pbp13	Shapes are unlikely to fall.	Shapes are unstable/easy to fall.	15	15	130632	0.8	0.75	81831	0.508420209	3.46	0.115384615
+p716057	passive	0	0	0	1	1	1	0	0	0	pbp24	centered and vertically straight	not centered and asymmetical	13	20	99465	0.6	0.75	82041	0.307647059	4.455882353	0.173913043
+p717319	passive	1	1	1	1	1	1	1	1	1	pbp02	Only one item appeared in the scenes.	Two items appeared in the scenes.	15	12	57066	1	1	42737	0.322265492	2.630434783	0.875
+p718290	active	1	1	1	1	1	1	1	1	1	pbp28	able to move by being rolled around	not able to be rolled around	12	16	117784	0.75	0.875	88009	0.55625	3.75	0.52173913
+p718862	active	1	1	1	1	1	1	1	1	1	pbp09	Will fall/move in opposite direction.	Will fall/move in the same direction.	12	13	58308	0.923076923	1	38167	0.285384331	4.25	0.285714286
+p719234	passive	0	0	0	0	0	0	0	0	0	pbp18	shapes falling downward	shapes moving upward	16	18	118766	0.666666667	0.25	78398	0.304831933	3.2375	0.208333333
+p722056	active	0	0	0	0	0	0	0	0	0	pbp18	the angles	the angles facing another way	13	14	60161	0.857142857	0.5	51469	0.304831933	3.2375	0.208333333
+p723161	passive	0	0	1	1	0	1	0	0	1	pbp19	floating	on ground	16	20	72125	0.6	0.625	45336	0.490123457	3.480769231	0.15
+p726098	active	1	1	1	1	1	1	0	0	1	pbp09	fall differently	fall the same	12	14	59290	0.857142857	0.875	43796	0.285384331	4.25	0.285714286
+p729078	active	0	0	0	0	0	0	0	0	0	pbp18	will stop moving	will not stop moving	12	16	66222	0.75	0.375	30813	0.304831933	3.2375	0.208333333
+p730971	passive	0	0	0	0	0	0	0	0	0	pbp26	The image went in opposite direction	The image went in the same direction	18	19	91832	0.631578947	0.25	40566	0.298013041	2.965116279	0.35
+p762409	active	1	1	1	1	1	1	1	1	1	pbp18	end touching	end not touching	12	19	78032	0.631578947	1	75460	0.304831933	3.2375	0.208333333
+p768486	active	0	0	0	0	0	0	0	0	0	pbp24	unknown	unknown	20	16	28721	0.75	0.375	18849	0.307647059	4.455882353	0.173913043
+p776084	passive	1	1	1	1	1	1	1	1	1	pbp16	circle on left	square on left 	12	12	56243	1	1	39875	0.355523072	3.214285714	0.47826087
+p778760	passive	1	1	1	1	1	1	1	1	1	pbp11b	object proximity close together	object proximity far apart	12	14	63416	0.857142857	1	85985	0.327441706	2.820512821	0.380952381
+p784025	active	0	0	0	0	0	0	0	0	0	pbp24	Falls to the left	Falls to the right	12	18	42998	0.666666667	0.625	28627	0.307647059	4.455882353	0.173913043
+p786063	passive	1	1	1	1	1	1	1	1	1	pbp28	"Given a little inertia, object will roll indefinitely"	Object would soon stop tumbling	14	18	215410	0.666666667	0.875	85433	0.55625	3.75	0.52173913
+p788736	passive	0	0	0	0	0	0	0	0	0	pbp19	objects move to the right	objects move to the left	16	15	76718	0.8	0.375	53466	0.490123457	3.480769231	0.15
+p789228	passive	1	1	1	1	1	1	1	1	1	pbp16	Circle comes before square	Square comes before circle	16	12	86671	1	1	59103	0.355523072	3.214285714	0.47826087
+p793086	active	0	0	0	0	0	0	0	0	0	pbp28	mainly circles and items that increased in number or size	advancing shapes that are similar shapes that had something taken away or given	15	15	41830	0.8	0.5	45625	0.55625	3.75	0.52173913
+p795929	passive	0	0	0	0	0	0	0	0	0	pbp26	unbalanced	balanced 	14	18	69135	0.666666667	0.75	42248	0.298013041	2.965116279	0.35
+p815175	active	0	0	0	1	1	0	0	0	0	pbp09	when the object fall they get further or closer to each other	when the objects fall they stay the same distance from each other	12	14	129222	0.857142857	1	71691	0.285384331	4.25	0.285714286
+p816279	passive	1	1	1	1	1	1	1	1	1	pbp26	the ball is rolling right of the objects below	the ball is rolling left of the objects below	13	17	84570	0.705882353	0.875	68018	0.298013041	2.965116279	0.35
+p817134	active	0	0	0	0	0	0	0	0	0	pbp13	They look alike.	These look alike also.	22	15	68517	0.8	0.625	56722	0.508420209	3.46	0.115384615
+p819567	active	0	0	0	1	1	1	0	0	0	pbp24	symmetirical	not symmetrical	15	15	87553	0.8	0.625	69513	0.307647059	4.455882353	0.173913043
+p826617	passive	0	0	0	1	1	1	0	0	0	pbp09	symmetrical or movement towards/away from the center	asymmetrical or movement towards one side	13	22	69563	0.545454545	0.625	46111	0.285384331	4.25	0.285714286
+p83382	active	1	1	1	1	1	1	1	1	1	pbp02	singular object in frame	two objects in frame	12	13	130510	0.923076923	1	44118	0.322265492	2.630434783	0.875
+p841658	active	0	0	0	1	1	1	0	0	0	pbp24	Centered	Off-center	13	20	94234	0.6	0.625	45951	0.307647059	4.455882353	0.173913043
+p842105	active	1	1	1	1	1	1	1	1	1	pbp04	Squares	Circles	12	14	50339	0.857142857	1	24843	0.34939759	2.075	0.625
+p847573	passive	0	0	0	0	0	0	0	0	0	pbp11b			12	16	423804	0.75	0.5	94541	0.327441706	2.820512821	0.380952381
+p848547	passive	1	1	1	1	1	1	1	1	1	pbp02	Single shape	Two shapes	13	17	48504	0.705882353	0.75	36786	0.322265492	2.630434783	0.875
+p855227	passive	0	0	0	0	0	0	0	0	0	pbp13	fall to the left	fall to the right	14	16	57883	0.75	0.375	29700	0.508420209	3.46	0.115384615
+p858319	active	0	0	0	0	0	0	0	0	0	pbp13	The objects are static and won't move	The objects will move.	12	18	76723	0.666666667	0.75	48854	0.508420209	3.46	0.115384615
+p879671	passive	1	1	1	1	1	1	1	1	1	pbp09	the two green items would fall in opposite directions	the two green items would fall in the same direction	13	13	31378	0.923076923	1	28372	0.285384331	4.25	0.285714286
+p88467	passive	0	0	0	0	0	0	0	0	0	pbp19	They are falling rapidly	They are falling not as fast	12	18	55931	0.666666667	0.25	33810	0.490123457	3.480769231	0.15
+p891647	active	1	1	1	1	1	1	1	1	1	pbp28	the objects are not stable they can move	the objects are more stable they dont really move	14	20	122369	0.6	0.875	43141	0.55625	3.75	0.52173913
+p891913	passive	1	1	1	1	1	1	1	1	1	pbp04	all squares	all circles	12	14	61057	0.857142857	1	25203	0.34939759	2.075	0.625
+p894502	passive	1	1	1	1	1	1	1	1	1	pbp19	Will fall through air to the ground.	Will not fall through air to the ground.	12	14	48183	0.857142857	0.875	36538	0.490123457	3.480769231	0.15
+p898318	passive	0	0	0	0	0	0	0	0	0	pbp24	I don't see a rule	I don't see a rule	16	26	199089	0.461538462	0.5	83000	0.307647059	4.455882353	0.173913043
+p909564	passive	1	1	1	1	1	1	1	1	1	pbp04	These are boxes	These are circles	12	15	90356	0.8	1	48714	0.34939759	2.075	0.625
+p913708	passive	0	0	0	0	0	0	0	0	0	pbp19	I used the after/before relationship after a few rule checks to categorize them afterwards.	The placement and similarity of these images were closer in more regards than the left side.	17	17	56216	0.705882353	0.625	70258	0.490123457	3.480769231	0.15
+p914435	passive	0	0	0	0	0	0	0	0	0	pbp18	Going to fall to the left or closer to the left side of screen.	Going to fall to the right or closer to the right side.	12	17	72173	0.705882353	0.625	72015	0.304831933	3.2375	0.208333333
+p916000	active	0	0	0	0	0	0	0	0	0	pbp19	go the opposite way from right scenes	go opposite from left scenes	18	21	94739	0.571428571	0.375	73351	0.490123457	3.480769231	0.15
+p926945	active	1	1	1	1	1	1	0	0	0	pbp19	Potential to fall	No potential to fall	12	17	76822	0.705882353	0.875	81627	0.490123457	3.480769231	0.15
+p928183	passive	1	1	1	1	1	1	1	1	1	pbp02	Only One Object	Two objects	15	14	26560	0.857142857	1	27481	0.322265492	2.630434783	0.875
+p929186	active	1	1	1	1	1	1	0	0	0	pbp13	no space in between pieces	space in between pieces	12	21	83582	0.571428571	0.75	41134	0.508420209	3.46	0.115384615
+p929643	active	0	0	0	0	0	0	0	0	0	pbp18	I honestly don't know.	I honestly don't know.	14	20	65582	0.6	0.625	75867	0.304831933	3.2375	0.208333333
+p930057	passive	0	0	0	0	0	0	0	0	0	pbp18	balls are heavy	balls are light	13	17	193749	0.705882353	0.75	80338	0.304831933	3.2375	0.208333333
+p930129	passive	1	1	1	1	1	1	0	1	0	pbp04	four-sided figures	round figures	14	12	50513	1	1	28729	0.34939759	2.075	0.625
+p936104	passive	0	0	0	0	0	0	0	0	0	pbp18	They fell to the right. 	They fell to the left. 	15	17	118255	0.705882353	0.375	51260	0.304831933	3.2375	0.208333333
+p936163	passive	1	1	1	1	1	1	1	1	1	pbp28	They can roll	They can't roll	12	20	105050	0.6	0.375	50859	0.55625	3.75	0.52173913
+p941544	active	1	1	1	1	1	1	1	1	1	pbp11b	OBJECTS CLOSE TOGETHER	OBJECTS SPACED FURTHER APART	13	18	80539	0.666666667	0.75	60225	0.327441706	2.820512821	0.380952381
+p941771	passive	0	0	0	0	0	0	0	0	0	pbp09	They are perpendicular.	Are opposites.	19	15	50863	0.8	0.5	45236	0.285384331	4.25	0.285714286
+p947007	active	0	0	0	1	1	1	0	0	0	pbp26	These fall to the left.	These fall to the right.	15	22	126364	0.545454545	0	91112	0.298013041	2.965116279	0.35
+p948823	active	1	1	1	1	1	1	1	1	1	pbp19	Objects will be in the air at some point.	Objects are always on the grounds.	12	15	41159	0.8	0.875	30977	0.490123457	3.480769231	0.15
+p957154	active	1	1	1	1	1	1	1	1	1	pbp04	"squares in number order : 1,2,3"	"circles in number order : 1,2,3"	14	15	38497	0.8	1	30179	0.34939759	2.075	0.625
+p960619	passive	0	0	0	0	0	0	0	0	0	pbp28	scenes matched	items were moving towards the right	16	15	41313	0.8	0.5	20875	0.55625	3.75	0.52173913
+p963351	active	0	0	0	1	1	1	0	0	0	pbp24	centered	off-centered	15	14	59881	0.857142857	0.875	26434	0.307647059	4.455882353	0.173913043
+p972445	active	0	0	0	0	0	0	0	0	0	pbp24	there isnt one	There isnt one	12	18	68201	0.666666667	0.625	51868	0.307647059	4.455882353	0.173913043
+p975630	passive	1	1	1	1	1	1	1	1	1	pbp04	they are all square	they are all circles	14	18	91044	0.666666667	1	35180	0.34939759	2.075	0.625
+p9766	active	0	0	0	0	0	0	0	0	0	pbp18	leaning to the left	leaning to the right	18	18	67442	0.666666667	0.5	60792	0.304831933	3.2375	0.208333333
+p978594	passive	0	0	0	0	0	0	0	0	0	pbp13	objects going to fall to the left	objects going to fall towards the right	12	17	63539	0.705882353	0.125	35144	0.508420209	3.46	0.115384615
+p979064	active	0	0	0	0	0	0	0	0	0	pbp11b	falling to the left	falling to the right	13	18	86180	0.666666667	0.5	65921	0.327441706	2.820512821	0.380952381
+p981102	passive	0	0	0	1	1	1	0	0	0	pbp24	The objects are lined up with each other.	The objects are NOT lined up with each other.	12	15	54969	0.8	0.875	22207	0.307647059	4.455882353	0.173913043
+p990533	passive	1	1	1	1	1	1	1	1	1	pbp09	Fall or move in different directions.	Fall or move in the same direction.	14	18	94046	0.666666667	0.625	107781	0.285384331	4.25	0.285714286
+p990861	active	1	1	1	1	1	1	1	1	1	pbp16	Circle on the left	Circle on the right	13	12	27979	1	1	20859	0.355523072	3.214285714	0.47826087

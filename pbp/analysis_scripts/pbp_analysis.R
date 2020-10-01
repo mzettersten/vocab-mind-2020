@@ -56,13 +56,13 @@ ggsave(here("figures","pbp_naming_accuracy_2.jpg"),width=10,height=6)
 #### SORTING TASK ####
 #predicting accuracy - test performance on sorting task
 #trial-by-trial data
-test <- read.csv(here("data","PBPSort_forAnalysis.txt"),sep="\t")
+test <- read.csv(here("data","PBPSort_forAnalysis_anonymized.txt"),sep="\t")
 #rename problem column
 colnames(test)[colnames(test)=="problem_type"] <- "trial"
 #merge with summarized nameability data
 test <- merge(test,sumD,by="trial")
 #dataset with verbal solutions coded for accuracy
-test_coded <- read.csv(here("data","PBPSort_forAnalysis_verbalSolutionCoded.txt"),sep="\t")
+test_coded <- read.csv(here("data","PBPSort_forAnalysis_verbalSolutionCoded_anonymized.txt"),sep="\t")
 
 #predict sorting accuracy at test from nameability/ verbal complexity
 m=glmer(dropCorrect~aveCWordLengthNBCor+(1|subject)+(1|trial),data=subset(test,trial_type=="test-sort"),family=binomial)
