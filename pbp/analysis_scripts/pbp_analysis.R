@@ -71,3 +71,30 @@ summary(m)
 #predict accuracy of verbal solution from nameability/ verbal complexity
 m=glmer(isRight~aveCWordLengthNBCor+(1|problem), data=test_coded ,family=binomial)
 summary(m)
+
+#### NOT REPORTED IN CHAPTER ####
+
+# Correlations between verbal complexity and accuracy for the PBP sorting task
+
+## summarize data by problem to compute correlations
+
+### average sorting accuracy
+test_sorting_avg <- test %>%
+  group_by(trial,aveCWordLengthNBCor) %>%
+  summarize(
+    avg_sorting_accuracy = mean(dropCorrect)
+  )
+
+#### sorting accuracy correlation w/ verbal complexity
+cor.test(test_sorting_avg$avg_sorting_accuracy,test_sorting_avg$aveCWordLengthNBCor)
+
+### average verbal solution accuracy
+test_coded_avg <- test_coded %>%
+  group_by(problem,aveCWordLengthNBCor) %>%
+  summarize(
+    avg_verbal_solution_accuracy = mean(isRight)
+  )
+
+#### sorting accuracy correlation w/ verbal complexity
+cor.test(test_coded_avg$avg_verbal_solution_accuracy,test_coded_avg$aveCWordLengthNBCor)
+
